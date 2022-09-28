@@ -1,0 +1,50 @@
+[
+    {
+        "id": "6334b47a9ef22c53bb1a2d66",
+        "picture": "https://www.mensjournal.com/wp-content/uploads/mf/the_15_most_important_exercises_for_men_main.jpg?quality=70&strip=all",
+        "age": "20-25",
+        "title": "Deadlift",
+        "details": "Arguably the king of all exercises, the deadlift hits every major muscle group hard, and is perhaps the greatest test of strength there is.\r\n",
+        "time_required":"30"
+    },
+    {
+        "id": "6334b47a7e6a841757be9fc3",
+        "picture": "https://www.mensjournal.com/wp-content/uploads/mf/dumbbell-bench-press-chest-weights-main.jpg?quality=86&strip=all",
+        "age": "20-25",
+        "title": "Bench Press",
+        "details": "Every gym-goer in the world has been asked “Whaddya bench?” at least once. This move is responsible for developing powerful, well-defined pecs, shoulders, and triceps, which lead to a more commanding presence, with or without a shirt on.\r\n",
+        "time_required":"30"
+    },
+    {
+        "id": "6334b47ae5b78f6206ad10eb",
+        "picture": "https://www.mensjournal.com/wp-content/uploads/mf/kb_swing_main.jpg?quality=86&strip=all",
+        "age": "20-25",
+        "title": "Kettlebell swing",
+        "details": "Often confused as a squat and front raise combo for the legs and shoulders, respectively, this move is actually an explosive hip hinge, great for the glutes and conditioning.\r\n",
+        "time_required":"20"
+    },
+    {
+        "id": "6334b47ab5fe5db08295b56e",
+        "picture": "https://www.mensjournal.com/wp-content/uploads/mf/_main_pullup_10.jpg?quality=86&strip=all",
+        "age": "20-25",
+        "title": "Pullup",
+        "details": "Nothing quite says “I’m big” like a wide set of shoulders; a wide back doesn’t hurt either. The best move for developing those big, fan-shaped muscles (latissimus dorsi, aka, the lats) that make your shoulders look wide is the traditional pullup.\r\n",
+        "time_required":"25"
+    },
+    {
+        "id": "6334b47a621be2e17d6c4e54",
+        "picture": "https://www.mensjournal.com/wp-content/uploads/mf/swiss_ball_rollout_main.jpg?quality=86&strip=all",
+        "age": "20-25",
+        "title": "Swiss Ball Rollout",
+        "details": "Although very challenging, the Swiss ball rollout is an essential part of anyone’s quest for a six-pack. As you roll out on the ball, your abs are put under increasing tension, and any fitness expert knows that one of the secrets to building ripped, lean muscle is high muscular tension.\r\n",
+        "time_required":"15"
+    },
+    {
+        "id": "6334b47a8d43a1ab3685acea",
+        "picture": "https://www.mensjournal.com/wp-content/uploads/mf/hamstring-curl-butt-main.jpg?quality=86&strip=all",
+        "age": "20-25",
+        "title": "Hamstring curl",
+        "details": "Okay, yeah, it looks a little silly. But unlike the leg curl machine, a hamstring curl on a physio ball takes a lot of stress off your knees, and forces you to coordinate your upper and lower body as you hammer your hamstrings—without putting any major joints at risk.\r\n",
+        "time_required":"25"
+    }
+]
