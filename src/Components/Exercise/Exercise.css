@@ -20,6 +20,9 @@
     position: absolute;
     bottom: 20px;
 }
+.button:focus {
+    background-color: forestgreen;
+}
 .button h4{
     color: white;
 }
@@ -62,5 +65,8 @@
     }
     .button{
         margin-left: 8px;
+    }
+    .button:focus {
+        background-color: forestgreen;
     }
 }

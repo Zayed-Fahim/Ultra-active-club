@@ -8,11 +8,16 @@ import './Body.css'
 import Activity from '../Activity/Activity';
 const Body = () => {
     const [exercises, setExercises] = useState([])
+    const [exerciseTime, setExerciseTime] = useState([])
     useEffect(() => {
         fetch('gym.json')
             .then(res => res.json())
             .then(data => setExercises(data))
-    },[])
+    }, [])
+    const clickHandler = (biyam) => {
+        const newExerciseTime = [...exerciseTime, biyam]
+        setExerciseTime(newExerciseTime)
+    }
     return (
         <div className='container'>
             <div className='header-main'>
@@ -25,7 +30,7 @@ const Body = () => {
                     <div className='every-exercise'>
                         {
                             exercises.map(exercise => <Exercise key={exercise.id}
-                                exercise={exercise}>
+                                exercise={exercise} clickHandler={clickHandler} exerciseTime={exerciseTime}>
                             </Exercise>)
                         }
                     </div>
