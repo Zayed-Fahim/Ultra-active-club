@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
+import image from '../../images/user-img.webp'
 import './Body.css'
 const Body = () => {
     const [exercises, setExercises] = useState([])
@@ -19,8 +20,10 @@ const Body = () => {
                         </Exercise>)
                     }
                 </div>
-                <div className='every-user'>
-                    <h1>user info</h1>
+                <div className='every-user-activity'>
+                    <div>
+                        <img src={image} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
