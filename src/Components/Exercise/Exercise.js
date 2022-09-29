@@ -1,4 +1,3 @@
-import React from 'react';
 import './Exercise.css'
 const Exercise = (props) => {
     const { img, title, details, age, time_required } = props.exercise;

@@ -3,7 +3,7 @@
 }
 .timer{
     background-color: #edf2f4;
-    width: 300px;
+    width: 280px;
     height: 95px;
     margin-left: auto;
     margin-right: auto;
@@ -30,9 +30,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 300px;
+    width: 280px;
     background-color: #edf2f4;
-    margin-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
 }
 .exercise-time h3{
@@ -43,8 +44,9 @@
     align-items: center;
     justify-content: space-around;
     background-color: #edf2f4;
-    width: 300px;
-    margin-left: 25px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -62,4 +64,9 @@
 }
 .exercise-break button p{
     font-size: 18px;
+}
+@media screen and (max-width:768px){
+    .exercise-break button{
+        margin-bottom: 20px;
+    }
 }
