@@ -35,6 +35,20 @@ const Body = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='body-details'>
+                        <div className='weight'>
+                            <h2>75<small>kg</small></h2>
+                            <p>Weight</p>
+                        </div>    
+                        <div className='height'>
+                            <h2>6.0</h2>
+                            <p>Height</p>
+                        </div>    
+                        <div className='age'>
+                            <h2>25yrs</h2>
+                            <p>Age</p>
+                        </div>    
+                    </div>
                 </div>
             </div>
         </div>
