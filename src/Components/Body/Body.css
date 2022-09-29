@@ -12,10 +12,29 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 25px;
 }
+.every-user-activity{
+    border: 2px solid black;
+}
+.user-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.user-details h3{
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
 .every-user-activity img{
-    width: 58px;
-    height: 58px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+}
+.user-address{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 @media screen and (min-width:769px) and (max-width:1280px) {
     .container {

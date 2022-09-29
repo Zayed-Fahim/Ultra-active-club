@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Exercise from '../Exercise/Exercise';
 import image from '../../images/user-img.webp'
 import './Body.css'
@@ -21,8 +23,17 @@ const Body = () => {
                     }
                 </div>
                 <div className='every-user-activity'>
-                    <div>
-                        <img src={image} alt="" />
+                    <div className='user-details'>
+                        <div>
+                            <img src={image} alt="" />
+                        </div>
+                        <div>
+                            <h3>Zayed Fahim</h3>
+                            <div className='user-address'>
+                                <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
+                                <address>Hazaribagh, Dhaka</address>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
