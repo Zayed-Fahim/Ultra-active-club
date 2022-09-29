@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+}
+.exercise-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.every-exercise{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+}
+@media screen and (min-width:769px) and (max-width:1280px) {
+    .container {
+        margin-left: 70px;
+    }
+
+    .exercise-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .every-exercise {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        margin-left: 15px;
+    }
+    .every-exercise {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 25px;
+    }
+}
