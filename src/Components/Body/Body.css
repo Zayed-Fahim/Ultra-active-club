@@ -1,7 +1,36 @@
 .container{
     display: flex;
+}
+.header-main{
+    display: flex;
     flex-direction: column;
     margin-left: 130px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 60%;
+    color: #9381ff;
+    padding-top: 80px;
+}
+
+.icon {
+    width: 50px;
+    height: 40px;
+}
+
+@media screen and (min-width:769px) and (max-width:1280px) {
+    .header {
+        padding-left: 70px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        padding-left: 15px;
+        margin-top: 0px;
+    }
 }
 .exercise-container{
     display: grid;
@@ -11,9 +40,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 25px;
+    column-gap: 60px;
 }
 .every-user-activity{
     background-color: white;
+    position: sticky;
 }
 .user-details{
     display: flex;
@@ -39,7 +70,7 @@
 .body-details{
     width: 300px;
     height: 70px;
-    background-color: wheat;
+    background-color: #edf2f4;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -57,7 +88,12 @@
     .container {
         margin-left: 70px;
     }
-
+    .header-main{
+        margin-left: 0px;
+    }
+    .header{
+        padding-left: 0px;
+    }
     .exercise-container {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -67,11 +103,19 @@
         grid-template-columns: repeat(2, 1fr);
         row-gap: 25px;
     }
+    .every-user-activity{
+        position: sticky;
+    }
 }
 
 @media screen and (max-width:768px) {
     .container {
         margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-main{
+        margin-left: 0px;
     }
     .every-exercise {
         display: grid;

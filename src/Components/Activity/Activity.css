@@ -1,0 +1,65 @@
+.activity h3{
+    margin-left: 25px;
+}
+.timer{
+    background-color: #edf2f4;
+    width: 300px;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.timer h4{
+    height:40px;
+    width: 40px;
+    background-color: white;
+    padding-left: 12px;
+    padding-top: 12px;
+    border-radius: 50%;
+}
+.timer h4:hover{
+    background-color: #4361ee;
+    color: white;
+}
+.exercise-break h3{
+    margin-top: 50px;
+}
+.exercise-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    background-color: #edf2f4;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.exercise-time h3{
+    margin: 0px;
+}
+.break-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #edf2f4;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.break-time h3{
+    margin: 0px;
+}
+.exercise-break button{
+    margin-top: 60px;
+    margin-left: 25px;
+    width: 85%;
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.exercise-break button p{
+    font-size: 18px;
+}
