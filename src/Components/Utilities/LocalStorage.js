@@ -4,7 +4,6 @@ const addToLs = id => {
     if(storedTime){
         exerciseTime = JSON.parse(storedTime);
     }
-    // add quantity
     const quantity = exerciseTime[id];
     if(quantity){
         const newQuantity = quantity + 1;
