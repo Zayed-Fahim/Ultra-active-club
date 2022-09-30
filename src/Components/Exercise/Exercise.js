@@ -1,12 +1,8 @@
 
 import './Exercise.css'
 const Exercise = (props) => {
-    const { exercise, clickHandler, exerciseTime } = props;
-    const { img, title, details, age, time_required } = exercise;
-    let totalTime = 0;
-    for (const exercise of exerciseTime ) {
-        totalTime = totalTime + exercise.time_required;
-    }
+    const { clickHandle } = props;
+    const { img, title, details, age, time_required } = props.exercise;
     return (
         <div className='exercise'>
             <img src={img} alt="" />
@@ -14,7 +10,7 @@ const Exercise = (props) => {
             <p>{details}</p>
             <h5>For Age: {age}</h5>
             <h5>Time Required: {time_required}s</h5>
-            <button className='button' onClick={()=> clickHandler(exercise)}>
+            <button className='button' onClick={()=>clickHandle(time_required)}>
                 <h4>Add to list</h4>
             </button>
         </div>

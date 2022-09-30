@@ -8,16 +8,16 @@ import './Body.css'
 import Activity from '../Activity/Activity';
 const Body = () => {
     const [exercises, setExercises] = useState([])
-    const [exerciseTime, setExerciseTime] = useState([])
+    const [exerciseValue, setExerciseValue] = useState(0);
+    const clickHandle = (time_required) => {
+        setExerciseValue(exerciseValue + time_required);
+    };
+    
     useEffect(() => {
         fetch('gym.json')
             .then(res => res.json())
             .then(data => setExercises(data))
     }, [])
-    const clickHandler = (biyam) => {
-        const newExerciseTime = [...exerciseTime, biyam]
-        setExerciseTime(newExerciseTime)
-    }
     return (
         <div className='container'>
             <div className='header-main'>
@@ -30,7 +30,7 @@ const Body = () => {
                     <div className='every-exercise'>
                         {
                             exercises.map(exercise => <Exercise key={exercise.id}
-                                exercise={exercise} clickHandler={clickHandler} exerciseTime={exerciseTime}>
+                                exercise={exercise} clickHandle={clickHandle}>
                             </Exercise>)
                         }
                     </div>
@@ -63,7 +63,7 @@ const Body = () => {
                         <p>Age</p>
                     </div>    
                 </div>
-                <Activity></Activity>
+                <Activity exerciseValue={exerciseValue}></Activity>
             </div>
         </div>
     );
