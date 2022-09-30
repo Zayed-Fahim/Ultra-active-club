@@ -6,6 +6,7 @@ import Exercise from '../Exercise/Exercise';
 import image from '../../images/user-img.webp'
 import './Body.css'
 import Activity from '../Activity/Activity';
+import Accordion from '../Accordion/Accordion';
 const Body = () => {
     const [exercises, setExercises] = useState([])
     const [exerciseValue, setExerciseValue] = useState(0);
@@ -35,7 +36,10 @@ const Body = () => {
                         }
                     </div>
                 </div>
-            </div>    
+                <div>
+                    <Accordion></Accordion>
+                </div>
+            </div>
             <div className='every-user-activity'>
                 <div className='user-details'>
                     <div>
@@ -53,19 +57,19 @@ const Body = () => {
                     <div className='weight'>
                         <h2>75<small>kg</small></h2>
                         <p>Weight</p>
-                    </div>    
+                    </div>
                     <div className='height'>
                         <h2>6.0</h2>
                         <p>Height</p>
-                    </div>    
+                    </div>
                     <div className='age'>
                         <h2>25yrs</h2>
                         <p>Age</p>
-                    </div>    
+                    </div>
                 </div>
                 <Activity exerciseValue={exerciseValue}></Activity>
             </div>
-        </div>
+        </div> 
     );
 };
 

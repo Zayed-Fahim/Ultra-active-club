@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Activity.css'
 import { ToastContainer, toast } from "react-toast";
+import addToLs from '../Utilities/LocalStorage';
+
 const Activity = (props) => {
     const {exerciseValue} = props
     const times = [10, 20, 30, 40, 50];
@@ -8,6 +10,7 @@ const Activity = (props) => {
     const [selectedTime, setSelectedTime] = useState(0)
     const buttonClicked = (time) => {
         setSelectedTime(time)
+        addToLs(selectedTime)
     }
     return (
         <div className='activity'>

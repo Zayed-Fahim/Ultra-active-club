@@ -30,7 +30,7 @@
 }
 .every-user-activity{
     background-color: white;
-    width: 350px;
+    width: 380px;
     height: 970px;
     position: sticky;
     top: 0;
@@ -93,6 +93,7 @@
         row-gap: 25px;
     }
     .every-user-activity{
+        width: 370px;
         height: 800px;
         position: sticky;
         top: 0;
